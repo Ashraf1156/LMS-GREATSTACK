@@ -7,7 +7,7 @@ const lectureSchema = new mongoose.Schema({
     lectureUrl: { type: String, required: true },
     isPreviewFree: { type: Boolean, required: true },
     lectureOrder: { type: Number, required: true }
-}, { _id: false }); 
+}, { _id: false });
 
 const chapterSchema = new mongoose.Schema({
     chapterId: { type: String, required: true },
@@ -37,7 +37,7 @@ const courseSchema = new mongoose.Schema({
     ],
     enrolledStudents: [
         {
-            type: String,
+            type: String, // Changed from ObjectId to String based on User model
             ref: 'User'
         }
     ],
