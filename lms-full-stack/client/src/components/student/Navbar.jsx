@@ -6,6 +6,7 @@ import { useClerk, UserButton, useUser } from '@clerk/clerk-react';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 
+
 const Navbar = () => {
 
   const location = useLocation();
